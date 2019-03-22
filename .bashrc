@@ -79,7 +79,7 @@ else
 		# show root@ when we don't have colors
 		PS1='\u@\h \W \$ '
 	else
-		PS1='\e[1;32m[\u \[\e[1;31m\]@ \[\e[1;33m\]\w\[\e[1;32m\]]\[\e[1;34m\]\n$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\e[1;31m\]└─ \[\e[1;31m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
+		PS1='[ \u@\h \W ]n$(git branch 2>/dev/null | grep "^*" | colrm 1 2) └─ \$ '
 	fi
 fi
 
